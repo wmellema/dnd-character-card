@@ -1,0 +1,128 @@
+
+
+.card {
+  width: 1000px;
+
+  border: 1px solid black;
+  overflow: hidden;
+  background-image: url("https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/127/1000/1000/636252755648556800.jpeg");
+  background-size:     contain;                      /* <------ */
+   background-repeat:   no-repeat;
+   background-position: center center;
+}
+
+.header {
+  height: 50px;
+  border-bottom: 1px solid black;
+}
+.bar-elements {
+  background: black;
+  padding: 0px 10px;
+  margin: 0;
+  color:white;
+  height: 50px;
+  bottom: 0;
+}
+
+.name-bar {
+  transform: skewX(20deg);
+  position: relative;
+  left: -20px;
+  padding-left: 30px;
+  padding-right: 150px;
+  float:left;
+}
+body {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1em;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+.bar-elements h1 {
+  margin: 0;
+}
+.name-bar h1 {
+  transform: skewX(-20deg);
+}
+.challenge-bar {
+  transform: skewX(-20deg);
+  float:right;
+  padding-right: 30px;
+  position: relative;
+  right: -20px;
+}
+.challenge-bar h1 {
+  transform: skewX(20deg);
+}
+.information{
+  width: 50%;
+  margin-left: 20px;
+  height: 24px;
+}
+.information h5 {
+  display: inline-block;
+  width: 32%;
+  margin: 0;
+}
+
+.left-align {
+  width: 40%;
+  margin: 15px 0;
+  text-align: left;
+  margin-left: 20px
+
+}
+.right-align {
+  float: right;
+  width: 40%;
+  margin: 15px 0;
+  text-align: right;
+  margin-right: 20px;
+}
+.stats {
+  height: 40px;
+
+
+}
+.stats h1 {
+    width: 60px;
+    display: inline-block;
+}
+.stats > .identifier:first-child {
+  margin-left: 20%;
+}
+.stat {
+  color: darkred;
+}
+.stat:last-of-type {
+  width: 15px;
+}
+.stats > .ident-small {
+  width: 15%;
+}
+.stats > .ident-small:first-child {
+  margin-left: 4%;
+}
+.stats .ident-small {
+  display: inline-block;
+}
+
+.seperator {
+    position:relative;
+    left: -20px;
+    margin: 25px 0;
+    height: 1px;
+    border: 0;
+    background: black;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(darkred), to(rgba(255,255,255,0)));
+    width: 100%;
+}
+.right-align .seperator {
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(255,255,255,0)),to(darkred));
+  left: 20px;
+}
+
+.monster-info td {
+  vertical-align:top;
+}
